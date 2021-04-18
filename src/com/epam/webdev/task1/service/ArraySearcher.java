@@ -9,9 +9,7 @@ public class ArraySearcher {
 
     public static Array findPrimeNumbers(Array array) {
 
-        if (array == null) {
-            // throw Exception
-        }
+        ArrayChecker.checkArrayOnNull(array);
 
         List<Integer> primaryNumbers = new ArrayList<>();
 
@@ -39,9 +37,7 @@ public class ArraySearcher {
 
     public static Array findFibonacciNumbers(Array array) {
 
-        if (array == null) {
-            // throw Exception
-        }
+        ArrayChecker.checkArrayOnNull(array);
 
         List<Integer> fibonacciList = new ArrayList<>();
 
@@ -70,9 +66,7 @@ public class ArraySearcher {
 
     public static Array findNumbersConsistsOfThreeUniqueDigits(Array array) {
 
-        if (array == null) {
-            // throw Exception
-        }
+        ArrayChecker.checkArrayOnNull(array);
 
         List<Integer> uniqueNumbersList = new ArrayList<>();
 

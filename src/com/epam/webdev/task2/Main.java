@@ -6,22 +6,25 @@ public class Main {
     public static void main(String[] args) {
         int[][] array = {{31, 44, 1, 6}, {3, 0, -99}, {-4, 9, 8}};
 
-        Sorter.sort(array, true, new ArrayComparatorByMaxElement());
+        Sorter.sort(array,  new ArrayComparatorByMaxElement());
         System.out.println("Sorted my sum ascending:\n" + arrayToString(array));
 
-        Sorter.sort(array, false, new ArrayComparatorByMaxElement());
+        Sorter.sort(array,  new ArrayComparatorByMaxElement());
+        Sorter.invert(array);
         System.out.println("Sorted my sum descending:\n" + arrayToString(array));
 
-        Sorter.sort(array, true, new ArrayComparatorByMaxElement());
+        Sorter.sort(array,  new ArrayComparatorByMaxElement());
         System.out.println("Sorted my max value ascending:\n" + arrayToString(array));
 
-        Sorter.sort(array, false, new ArrayComparatorByMaxElement());
+        Sorter.sort(array,  new ArrayComparatorByMaxElement());
+        Sorter.invert(array);
         System.out.println("Sorted my max value descending:\n" + arrayToString(array));
 
-        Sorter.sort(array, true, new ArrayComparatorByMinElement());
+        Sorter.sort(array,  new ArrayComparatorByMinElement());
         System.out.println("Sorted my min value ascending:\n" + arrayToString(array));
 
-        Sorter.sort(array, false, new ArrayComparatorByMinElement());
+        Sorter.sort(array,  new ArrayComparatorByMinElement());
+        Sorter.invert(array);
         System.out.println("Sorted my min value descending:\n" + arrayToString(array));
     }
 
